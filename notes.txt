@@ -1,0 +1,33 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push():  1.733708 ms
+Time to run code with unshift(): unshift 703.933208 ms
+
+Large Array
+-----------
+Time to run code with push():371.25 μs
+Time to run code with unshift(): unshift 5.741 ms
+
+Medium Array
+------------
+Time to run code with push(): push 92.292 μs
+Time to run code with unshift(): unshift 124.125 μs
+
+
+Small Array
+-----------
+Time to run code with push(): push 41.416 μs
+Time to run code with unshift(): unshift 18.5 μs
+
+
+Tiny Array
+----------
+Time to run code with push(): push 43.292 μs
+Time to run code with unshift(): unshift 13.833 μs
+
+
+
+The difference between to the two functions becomes apparent as the size of the data structure, the array, increases. Because unshift reqiures changing the location fo subsequent indices as you add the front of the array, the runtime increases more dramatically than adding an index to the end of the array. Unshift is only more effiencent in terms of time if you know the size of the array being used is small.
